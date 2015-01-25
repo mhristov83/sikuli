@@ -1,0 +1,132 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>_uimap.sikuli\_uimap.sikuli</h2> <a href="_uimap.sikuli\_uimap.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="cmt">########################################################
+</span><span class="cmt"># UI map for XYZ
+</span><span class="cmt">########################################################
+</span><span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="cmt">########################################################
+</span>
+<span class="kw">class</span> Google:
+    searchBar = Pattern(<img src="searchBar-1.png" />).similar(<span class="dig">0.80</span>)
+    telerikTab= <img src="telerikTab.png" />
+    imagesTab = <img src="images.png" />
+    telerikImage = <img src="telerikImage.png" />
+    copy = <img src="copy.png" />
+    adrressBar = <img src="adrressBar.png" />
+    spaste = <img src="spaste.png" />
+
+<span class="kw">class</span> Cities:
+    oslo = <img src="oslo.png" />
+    coppenhagen = <img src="coppenhagen.png" />
+    stockholm = <img src="stockholm.png" />
+    washington = <img src="washington.png" />
+    seoul = <img src="seoul.png" />
+    rome = <img src="rome.png" />
+    madrid = <img src="madrid.png" />
+
+<span class="kw">class</span> Countries:
+    italy = <img src="italy.png" />
+    sweden = <img src="sweden.png" />
+    norway = <img src="norway.png" />
+    spain = <img src="spain.png" />
+    USA = <img src="usa.png" />
+    southKorea = <img src="soutKorea.png" />
+    denmark = <img src="denmark.png" />
+
+<span class="kw">class</span> CitiesInCountries:
+    romeItaly = <img src="romeD.png" />
+    madridSpain = <img src="madridD.png" />
+    seoulKorea = <img src="seoulD.png" />
+    washingtonUsa = <img src="washingtonD.png" />
+    coppenhagenDenmark = <img src="coppenhagenD.png" />
+    stockholmSweden = <img src="stockholmD.png" />
+    osloNorway = <img src="osloD.png" />
+
+<span class="kw">class</span> Calculator:
+    seven = <img src="seven.png" />
+    five = <img src="five.png" />
+    plus = <img src="plus.png" />
+    minus = <img src="minus.png" />
+    divide = <img src="divide.png" />
+    multiply =<img src="multiply.png" />
+    equals = <img src="equals.png" />
+    thirtyFive = <img src="thirtyFive.png" />
+    two = <img src="two.png" />
+    twelve =<img src="twelve.png" />
+    onePointFour = <img src="onePointFour.png" />
+<span class="kw">class</span> Tabs:
+    closeButton = <img src="close.png" />
+    chrome = Pattern(<img src="chrome.png" />).similar(<span class="dig">0.56</span>)
+</pre>
+</body>
+</html>

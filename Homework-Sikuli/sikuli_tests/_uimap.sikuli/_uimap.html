@@ -1,0 +1,143 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>_uimap.sikuli\_uimap.sikuli</h2> <a href="_uimap.sikuli\_uimap.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="cmt">########################################################
+</span><span class="cmt"># UI map for XYZ
+</span><span class="cmt">########################################################
+</span><span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="cmt">########################################################
+</span>
+<span class="kw">class</span> BS:
+    button_CreateWorkspace=<img src="button_CreateWorkspace.png" />
+    button_DoCreateWorkspace=<img src="button_DoCreateWorkspace.png" />
+    label_WorkspaceName=Pattern(<img src="label_WorkspaceName.png" />).targetOffset(<span class="dig">0</span>,<span class="dig">28</span>)
+    button_CreateABProject=<img src="button_CreateABProject.png" />
+
+<span class="kw">class</span> Google:
+    search_Input = <img src="1414754015818.png" />
+    telerik_Result_Div = <img src="1414754137073.png" />
+    minimize_Button = Pattern(<img src="1414758934864.png" />).similar(<span class="dig">0.78</span>).targetOffset(-<span class="dig">36</span>,<span class="dig">3</span>)
+
+<span class="kw">class</span> DragAndDrop:
+    oslo = <img src="1414756509844.png" />
+    madrid = <img src="1414756525597.png" />
+    stockholm = <img src="1414756532180.png" />
+    washington = <img src="1414756537956.png" />
+    seoul =<img src="1414756547717.png" />
+    rome =<img src="1414756553253.png" />
+    copenhagen =<img src="1414756559302.png" />
+    norway =<img src="1414756707006.png" />
+    sweden =<img src="1414756716043.png" />
+    usa=<img src="1414756721932.png" />
+    spain=<img src="1414756729123.png" />
+    southKorea=<img src="1414756734669.png" />
+    denmark=<img src="1414756741860.png" />
+    italy=<img src="1414756746957.png" />
+    italyRome=<img src="1414756774572.png" />
+    denmarkCopenhagen=<img src="1414756781396.png" />
+    swedenStockholm=<img src="1414756789667.png" />
+    norwayOslo=<img src="1414756795470.png" />
+    usaWashington=<img src="1414756800818.png" />
+    southKoreaSeoul=<img src="1414756805827.png" />
+    spainMadrid = <img src="1414756811357.png" />
+
+<span class="kw">class</span> Skype:
+    skype_Icon = <img src="1414763592916.png" />
+    skype_OnScreen = <img src="1414763644096.png" />
+    friend_Name = <img src="1414765560202.png" />
+    message_Input = <img src="1414763925862.png" />
+
+<span class="kw">class</span> Facebook:
+    messages_Button = <img src="1414765050739.png" />
+    newMessage_Button = <img src="1414767979760.png" />
+    search_Input = <img src="1414765114507.png" />
+    message_Input = <img src="1414765699448.png" />
+    assertRightPerson_Field = <img src="1414940479908.png" />
+
+<span class="kw">class</span> Calculator:
+    button_ce =<img src="1414769953384.png" />
+    button_0=<img src="1414769838457.png" />
+    button_7 = <img src="1414769850633.png" />
+    button_8 = <img src="1414770145586.png" />
+    button_plus=<img src="1414769868017.png" />
+    button_minus=<img src="1414769875985.png" />
+    button_multiply=<img src="1414769887120.png" />
+    button_divide=<img src="1414769894688.png" />
+    button_equals=<img src="1414769899201.png" />
+    result_field_sum=<img src="1414769926999.png" />
+    result_field_subtract=<img src="1414769975056.png" />
+    result_field_multiply=<img src="1414769999409.png" />
+    result_field_divide=<img src="1414770111920.png" />
+    result_field_divideByZero=<img src="1414770132521.png" />
+</pre>
+</body>
+</html>
